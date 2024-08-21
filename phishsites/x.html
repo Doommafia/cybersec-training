@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <img src="https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png" alt="Logo" class="logo">
+        <div class="header-links">
+            <a href="#">Password Reset</a>
+            <a href="#">English (US)</a>
+        </div>
+    </div>
+</div>
+
+<div class="reset-container">
+    <h1>Reset your password</h1>
+    <div class="account-info">
+        <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="User Profile">
+        <div>
+            <strong>$user</strong><br>
+            <small>@$usertag</small>
+        </div>
+    </div>
+    <p>Strong passwords include numbers, letters and punctuation marks. <a href="#">Learn more</a></p>
+    <form>
+        <label for="new-password">Enter your new password</label>
+        <input type="password" id="new-password" placeholder="Enter your new password">
+
+        <label for="confirm-password">Enter your password one more time</label>
+        <input type="password" id="confirm-password" placeholder="Enter your password one more time">
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+
+        <p>Resetting your password will log you out of all your active Twitter sessions.</p>
+
+        <button type="submit">Reset password</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #ffffff;
+        color: #14171A;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .header {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+
+    .header .header-content {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .logo {
+        height: 24px;
+    }
+
+    .header a {
+        font-size: 14px;
+        color: #657786;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .reset-container {
+        width: 400px;
+        padding: 20px;
+        margin-top: 0vh;
+        text-align: left;
+    }
+
+    .reset-container h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .reset-container img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .reset-container p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    .reset-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #E1E8ED;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .reset-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .reset-container .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .reset-container input[type="checkbox"] {
+        margin-right: 5px;
+        transform: scale(1.2);
+    }
+
+    .reset-container button {
+        background-color: #1DA1F2;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .reset-container button:hover {
+        background-color: #1A91DA;
+    }
+
+    .reset-container .account-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+</style>
